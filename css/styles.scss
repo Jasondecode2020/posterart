@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+
+body {
+  margin:0;
+  font-family: 'Amatic SC', cursive;
+  color: #fff;
+  background-color: rgb(39, 39, 39);
+}
+
+section {
+  display: grid;
+  // grid-template-columns: 1fr;
+  justify-items: center;
+
+  textarea {
+
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+  }
+
+  #capture {
+    background-color: black;
+    position: relative;
+    font-size: 3em;
+    overflow: hidden;
+    width: 600px;
+    aspect-ratio: 16 / 9;
+
+
+    #quote__text {
+      position: absolute;
+      top: 10px;
+      left: 40px;
+      right: 40px;
+      bottom:40px;
+      text-align: center;
+    }
+  }
+
+  canvas {
+
+  }
+} 
+

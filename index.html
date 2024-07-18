@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poster Art Generator</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+    <script src="html2canvas.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+         <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
+</head>
+<body>
+
+    <section>
+
+        <div id="capture">
+            <h1 id="fixed__text">
+                Leetcode Practice
+            </h1>
+            <h1 id="quote__text">
+                Leetcode Easy
+            </h1>
+            <img id="myImg" src="images/img/f.jpg">
+        </div>
+        <div>
+            <input type="radio" id="contactChoice1" name="level" value="Easy" checked />
+            <label for="contactChoice1">Easy</label>
+            <input type="radio" id="contactChoice2" name="level" value="Medium" />
+            <label for="contactChoice2">Medium</label>
+            <input type="radio" id="contactChoice3" name="level" value="Hard" />
+            <label for="contactChoice3">Hard</label>
+            <button type="button" onclick=" checkButton()"> Select Level </button> 
+
+            <select id="framework">
+                <option value="1">AWS</option>
+                <option value="2">GOOGLE</option>
+                <option value="3">FACEBOOK</option>
+                <option value="4">TICTOK</option>
+                <option value="4">MICROSOFT</option>
+                <option value="5">Leetcode Python</option>
+            </select>
+            <button id="btn" onclick="checkImage()">Select Company</button>
+        </div>
+        <div class="download">
+            <div class="download-section"><textarea></textarea></div>
+            <div class="download-section"><button type="button" onClick="generate()">Generate</button></div>
+            <div class="download-section"><a id="download" download="poster.png">
+                <button type="button" onClick="download()">Download</button>
+            </a></div>
+        </div>
+        
+        <section id="render">
+            <h1>Render</h1>
+        </section>
+        <div class="login-container">
+        <form class="login-form">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button class="g-recaptcha" 
+                data-sitekey="6LfVJhAqAAAAAN3SstwFTZzYfbYJ7ksn8RbpLNeH" 
+                data-callback='onSubmit' 
+                data-action='submit'>Submit</button>
+        </form>
+    </div>
+    </section>
+    
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
