@@ -28,8 +28,10 @@ function checkImage() {
             document.getElementById("myImg").src = "images/img/tictok2.png";
         } else if (sb.selectedIndex === 4) {
             document.getElementById("myImg").src = "images/img/microsoft.png";
-        } else {
+        } else if (sb.selectedIndex === 5) {
             document.getElementById("myImg").src = "images/img/python.webp";
+        } else {
+            document.getElementById("myImg").src = "images/img/java.png";
         }
     };
 }
