@@ -7,12 +7,6 @@
     <title>Poster Art Generator</title>
     <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
     <script src="html2canvas.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-         <script>
-   function onSubmit(token) {
-     document.getElementById("demo-form").submit();
-   }
- </script>
 </head>
 <body>
 
@@ -57,26 +51,8 @@
         <section id="render">
             <h1>Render</h1>
         </section>
-        <div class="login-container">
-        <form class="login-form">
-            <h2>Login</h2>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button class="g-recaptcha" 
-                data-sitekey="6LfVJhAqAAAAAN3SstwFTZzYfbYJ7ksn8RbpLNeH" 
-                data-callback='onSubmit' 
-                data-action='submit'>Submit</button>
-        </form>
     </div>
     </section>
-    
-
     
     <script src="script.js"></script>
 </body>
